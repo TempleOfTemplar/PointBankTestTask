@@ -1,0 +1,9 @@
+<div class="component">
+  <ul class="list-group">
+    <li class="list-group-item" ng-repeat="item in $ctrl.items">
+      <div class="checkbox">
+        <label><input type="checkbox" ng-model="item.checked">{{item.label}}</label>
+      </div>
+    </li>
+  </ul>
+</div>

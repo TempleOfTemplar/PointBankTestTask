@@ -1,0 +1,5 @@
+<tabs-component>
+  <tab-component ng-repeat="tab in $ctrl.items| filter: {checked: true}" title="{{tab.label}}">
+    <p>{{tab.content}}</p>
+  </tab-component>
+</tabs-component>

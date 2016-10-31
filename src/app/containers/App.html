@@ -1,0 +1,4 @@
+<h1>{{$ctrl.getCurrentStateTitle()}}</h1>
+<ui-view></ui-view>
+    <a class="btn btn-primary" ui-sref="app.itemsList" ng-if="!$ctrl.$state.is('app.itemsList')">Перейти к списку</a>
+    <a class="btn btn-primary" ui-sref="app.tabs" ng-if="($ctrl.items |filter:{checked:true}).length > 0 && !$ctrl.$state.is('app.tabs')">Перейти к табам</a>
